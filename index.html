@@ -19,8 +19,9 @@
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="userinfo">
                         <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
+                        <span class="text-avatar">B</span>
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
@@ -32,14 +33,18 @@
                 <li class="layui-nav-item"><a href=""><span class="iconfont icon-tuichu"></span>退出</a></li>
             </ul>
         </div>
-
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <div class="userinfo">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
+                    <span class="text-avatar">B</span>
+                    <span id="welcome">欢迎 ***</span>
+                </div>
                 <!-- lay-shrink="all" 就是开启一个其他关闭 TAB栏 -->
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all">
-                    <li class="layui-nav-item">
-                        <a href="/"><span class="iconfont icon-home"></span>首页</a>
+                    <li class="layui-nav-item layui-this">
+                        <a href="/home/dashboard.html" target="fm"><span class="iconfont icon-home"></span>首页</a>
                     </li>
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
@@ -75,7 +80,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <div style="padding: 15px;">内容主体区域</div>
+            <iframe name="fm" src="./home/dashboard.html" frameborder="0"></iframe>
         </div>
 
         <div class="layui-footer">
