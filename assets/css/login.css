@@ -15,6 +15,9 @@ html,body {
     top: 50%;
     transform: translate(-50%,-50%);
 }
+.layui-main {
+    padding-top: 50px !important;
+}
 .title-box {
     height: 60px;
     background: url(/assets/images/login_title.png)no-repeat center;
